@@ -1,17 +1,17 @@
 plugins {
     id 'java-library'
-    id "io.freefair.lombok" version "8.4"
-    id 'io.qameta.allure' version '2.10.0'
-
+    id 'io.qameta.allure' version '2.11.2'
 }
 
-group = 'gmail.dchizhova68'
-version = '1.0-SNAPSHOT'
+repositories {
+    mavenCentral()
+}
 
-
-def allureVersion = "2.19.0",
-    restAssuredVersion = "5.4.0",
-    selenideVersion = "6.19.1"
+def selenideVersion = "6.13.0",
+    restAssuredVersion = "5.3.0",
+    allureVersion = "2.21.0",
+    junitVersion = "5.9.3",
+    slf4jVersion = "2.0.7"
 
 allure {
     report {
@@ -27,34 +27,19 @@ allure {
     }
 }
 
-
-repositories {
-    mavenCentral()
-}
-
-compileJava {
-    options.encoding = 'UTF-8'
-}
-
-compileTestJava {
-    options.encoding = 'UTF-8'
-}
-
 dependencies {
     testImplementation(
             "com.codeborne:selenide:$selenideVersion",
-            "org.junit.jupiter:junit-jupiter:5.10.0",
-            "org.slf4j:slf4j-simple:2.0.7",
-            "io.rest-assured:rest-assured:$restAssuredVersion",
-            "io.rest-assured:json-schema-validator:$restAssuredVersion",
-            "io.qameta.allure:allure-rest-assured:$allureVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
-            "io.rest-assured:json-path:5.4.0"
+            "io.appium:java-client:8.3.0",
+            "io.rest-assured:rest-assured:$restAssuredVersion",
+            "org.junit.jupiter:junit-jupiter:$junitVersion",
+            "org.slf4j:slf4j-simple:$slf4jVersion",
+            "org.aeonbits.owner:owner:1.0.12"
     )
 }
 
 tasks.withType(Test) {
-    systemProperties(System.getProperties())
     useJUnitPlatform()
 
     testLogging {
@@ -65,3 +50,6 @@ tasks.withType(Test) {
     }
 }
 
+task mobail_test(type: Test) {
+    useJUnitPlatform()
+}
