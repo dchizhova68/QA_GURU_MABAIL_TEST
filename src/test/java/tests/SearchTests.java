@@ -23,10 +23,10 @@ public class SearchTests extends TestBase {
             $$(id("org.wikipedia.alpha:id/page_list_item_title"))
                     .shouldHave(sizeGreaterThan(0)));
 
-        step("Нажимаем на первый результат поиска", () ->
+        step("Open first article", () ->
                 $$(id("org.wikipedia.alpha:id/page_list_item_title")).first().click());
 
-        step("Проверяем текст ошибки", () ->
+        step("Check error", () ->
                 $(id("org.wikipedia.alpha:id/view_wiki_error_text")).shouldBe(visible));
     }
 }
