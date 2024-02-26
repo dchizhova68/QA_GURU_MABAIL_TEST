@@ -1,4 +1,4 @@
-package test;
+package tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
@@ -20,16 +20,12 @@ public class TestBase {
     static void beforeAll() {
         if (deviceHost == null) {
             deviceHost = "remote";
-
-
         }
-        switch (deviceHost) {
-            case "remote":
-                Configuration.browser = BrowserstackDriver.class.getName();
-                break;
-            case "local":
-                Configuration.browser = LocalDriver.class.getName();
-                break;
+
+        if (deviceHost.equals("remote")) {
+            Configuration.browser = BrowserstackDriver.class.getName();
+        } else if (deviceHost.equals("local")) {
+            Configuration.browser = LocalDriver.class.getName();
         }
         Configuration.browserSize = null;
         Configuration.timeout = 30000;

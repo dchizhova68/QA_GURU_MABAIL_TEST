@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -12,7 +13,9 @@ import static io.appium.java_client.AppiumBy.accessibilityId;
 import static io.appium.java_client.AppiumBy.id;
 import static io.qameta.allure.Allure.step;
 @Tag("remote")
-public class RemoteTests extends test.TestBase {
+@Feature("Тесты мобильного приложения Википедия")
+@DisplayName("Мобильные тесты Википедия на Browserstack")
+public class RemoteTests extends TestBase {
     @Test
     @DisplayName("Проверка поиска")
     void successfulSearchTest() {

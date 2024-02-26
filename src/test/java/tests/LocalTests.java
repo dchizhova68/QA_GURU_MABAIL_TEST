@@ -1,10 +1,10 @@
 package tests;
 
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
@@ -12,7 +12,9 @@ import static io.appium.java_client.AppiumBy.accessibilityId;
 import static io.appium.java_client.AppiumBy.id;
 import static io.qameta.allure.Allure.step;
 @Tag("local")
-public class LocalTests extends test.TestBase {
+@Feature("Тесты мобильного приложения Википедия")
+@DisplayName("Мобильные тесты Википедия на локальном эмуляторе")
+public class LocalTests extends TestBase {
 
     @Test
     @DisplayName("Проверка поиска")
@@ -56,5 +58,29 @@ public class LocalTests extends test.TestBase {
 
         step("Проверяем описание", () ->
                 $(id("org.wikipedia.alpha:id/page_list_item_description")).shouldHave(text("Automation for Apps")));
+    }
+
+    @Test
+    @DisplayName("Проверка онбординг-страниц ")
+    void onBoardingPagesTest() {
+        step("Проверить первую страницу", () -> {
+            $(id("org.wikipedia.alpha:id/primaryTextView"))
+                    .shouldHave(text("The Free Encyclopedia …in over 300 languages"));
+            $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click();
+        });
+        step("Проверить вторую страницу", () -> {
+            $(id("org.wikipedia.alpha:id/primaryTextView"))
+                    .shouldHave(text("New ways to explore"));
+            $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click();
+        });
+        step("Проверить третью страницу", () -> {
+            $(id("org.wikipedia.alpha:id/primaryTextView"))
+                    .shouldHave(text("Reading lists with sync"));
+            $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click();
+        });
+        step("Проверить четвертую страницу", () -> {
+            $(id("org.wikipedia.alpha:id/primaryTextView"))
+                    .shouldHave(text("Data & Privacy"));
+        });
     }
 }

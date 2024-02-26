@@ -2,11 +2,10 @@ package config;
 
 import org.aeonbits.owner.Config;
 @Config.Sources({
-        "classpath:${env}.properties",
+        "classpath:remote.properties",
 })
 
 public interface browserstackConfig extends Config {
-
     @Key("user")
     String getUser();
 
@@ -23,6 +22,7 @@ public interface browserstackConfig extends Config {
     String getOsVersion();
 
     @Key("baseUrl")
+    @DefaultValue("http://hub.browserstack.com/wd/hub")
     String getBaseUrl();
 
     @Key("project")
