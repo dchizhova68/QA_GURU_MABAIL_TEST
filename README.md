@@ -1,4 +1,4 @@
-[# Проект по автоматизации тестирования мобильного приложения [Wikipedia]([https://www.litres.ru/](https://github.com/wikimedia/apps-android-wikipedia/))
+# Проект по автоматизации тестирования мобильного приложения [Wikipedia]([https://www.litres.ru/](https://github.com/wikimedia/apps-android-wikipedia/)
 
 <img alt="litres" src="src/media/screenshots/mainPageMobile.JPG">
 
@@ -107,4 +107,3 @@ gradle clean local_test -DdeviceHost=local    - запуск тестов на �
 <p align="center">
   <img title="Selenoid Video" src="src/media/screenshots/testVideoMobile.gif">
 </p>
-](https://github.com/dchizhova68/QA_GURU_MOBILE_TEST)
