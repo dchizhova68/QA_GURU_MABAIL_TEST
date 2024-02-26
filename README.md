@@ -105,5 +105,5 @@ gradle clean local_test -DdeviceHost=local    - запуск тестов на �
 
 В отчетах Allure для каждого теста прикреплено видео прохождения теста 
 <p align="center">
-  <img title="Selenoid Video" src="src/media/screenshots/testVideoMobile.gif">
+  <img title="Selenoid Video" src="src/media/screenshots/test_videoMobile.gif">
 </p>
