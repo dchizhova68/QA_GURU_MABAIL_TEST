@@ -27,8 +27,8 @@ public class RemoteTests extends test.TestBase {
     @Test
     @DisplayName("Проверка открытия статьи")
     void successfulOpenFoundArticleTest() {
-        step("Type search", () -> {
-            $(accessibilityId("Отправляем запрос на поиск")).click();
+        step("Отправляем запрос на поиск", () -> {
+            $(accessibilityId("Search Wikipedia")).click();
             $(id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Selenide");
         });
 

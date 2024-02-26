@@ -40,12 +40,12 @@ public class LocalTests extends test.TestBase {
         step("Открываем первую найденную статью", () ->
                 $$(id("org.wikipedia.alpha:id/page_list_item_title")).first().click());
 
-        step("Проверяем описание", () ->
+        step("Проверяем, что нет ошибки", () ->
                 $(id("org.wikipedia.alpha:id/view_wiki_error_text")).shouldBe(hidden));
     }
 
     @Test
-    @DisplayName("Проверка открытия статьи")
+    @DisplayName("Проверка описание статьи")
     void checkDescriptionTest() {
         back();
 
