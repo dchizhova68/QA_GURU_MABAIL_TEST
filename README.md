@@ -1,4 +1,4 @@
-# Проект по автоматизации тестирования мобильного приложения [Wikipedia]([https://www.litres.ru/](https://github.com/wikimedia/apps-android-wikipedia/)
+# Проект по автоматизации тестирования мобильного приложения [Wikipedia](https://github.com/wikimedia/apps-android-wikipedia/)
 
 <img alt="litres" src="src/media/screenshots/mainPageMobile.JPG">
 
