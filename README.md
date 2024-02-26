@@ -68,7 +68,7 @@ gradle clean local_test -DdeviceHost=local    - запуск тестов на �
 ![jenkins](src/media/screenshots/AllureReport1.png "Отчет")
 
 Пример Allure Report: 
-![jenkins](src/media/screenshots/AllureReport.JPG "Пример отчета")
+![jenkins](src/media/screenshots/AllureReportMobile.JPG "Пример отчета")
 
 <a id="allure-testops"></a>
 ## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="src/media/logo/Allure_TO.svg"> </a> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/4084/test-cases) </a> 
@@ -76,7 +76,7 @@ gradle clean local_test -DdeviceHost=local    - запуск тестов на �
 Реализована интеграция с <code>Allure TestOps</code>. Есть возможность просмотре результата выполнения автотестов и создания ручных тестов. 
 
 <p align="center">
-<img title="Allure TestOps DashBoard" src="src/media/screenshots/AllureTestOps.JPG">
+<img title="Allure TestOps DashBoard" src="src/media/screenshots/AllureTestOpsMobile.JPG">
 </p>
 
 
@@ -86,7 +86,7 @@ gradle clean local_test -DdeviceHost=local    - запуск тестов на �
 Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в задаче отображаются связные автотесты и результат их выполнения.
 
 <p align="center">
-<img title="Jira Task" src="src/media/screenshots/JiraTask.JPG">
+<img title="Jira Task" src="src/media/screenshots/JiraTaskMobile.JPG">
 </p>
 
 
@@ -96,7 +96,7 @@ gradle clean local_test -DdeviceHost=local    - запуск тестов на �
 Результаты выполнения автотестов отправляются в Telegram.
 
 <p align="center">
-<img width="70%" title="Telegram Notifications" src="src/media/screenshots/TelegramBot.JPG">
+<img width="70%" title="Telegram Notifications" src="src/media/screenshots/TelegramBoMobilet.JPG">
 </p>
 
 
