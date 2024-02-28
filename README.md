@@ -1,6 +1,6 @@
-[# Проект по автоматизации тестирования мобильного приложения [Wikipedia]([https://www.litres.ru/](https://github.com/wikimedia/apps-android-wikipedia/))
+# Проект по автоматизации тестирования мобильного приложения [Wikipedia](https://github.com/wikimedia/apps-android-wikipedia/)
 
-<img alt="litres" src="src/media/screenshots/mainPageLitres.JPG">
+<img alt="litres" src="src/media/screenshots/mainPageMobile.JPG">
 
 ## :scroll: Содержание:
 * <a href="#tools">Используемый стек</a>
@@ -65,7 +65,7 @@ gradle clean local_test -DdeviceHost=local    - запуск тестов на �
 ## <img width="4%" style="vertical-align:middle" title="Allure Report" src="src/media/logo/Allure.svg"> </a> Пример  [Allure-отчета](https://jenkins.autotests.cloud/job/student-dchizhova68-qa_guru23_jenkins_mobile_test/10/allure/) </a>  
 Дождаться выполнения сборки. нажать на кнопку "Allure Report"
 
-![jenkins](src/media/screenshots/AllureReport1.png "Отчет")
+![jenkins](src/media/screenshots/AllureReport1Mobile.png "Отчет")
 
 Пример Allure Report: 
 ![jenkins](src/media/screenshots/AllureReportMobile.JPG "Пример отчета")
@@ -105,6 +105,5 @@ gradle clean local_test -DdeviceHost=local    - запуск тестов на �
 
 В отчетах Allure для каждого теста прикреплено видео прохождения теста 
 <p align="center">
-  <img title="Selenoid Video" src="src/media/screenshots/testVideo.gif">
+  <img title="Selenoid Video" src="src/media/screenshots/test_videoMobile.gif">
 </p>
-](https://github.com/dchizhova68/QA_GURU_MOBILE_TEST)
