@@ -16,6 +16,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
     public static String deviceHost = System.getProperty("deviceHost");
+
     @BeforeAll
     static void beforeAll() {
         if (deviceHost == null) {
@@ -47,7 +48,7 @@ public class TestBase {
 
             Attach.addVideo(sessionId);
         }
-        if(deviceHost.equals("local")) {
+        if (deviceHost.equals("local")) {
             Attach.screenshotAs("Last screenshot");
             Attach.pageSource();
 

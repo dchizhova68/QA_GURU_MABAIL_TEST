@@ -1,11 +1,12 @@
 package config;
 
 import org.aeonbits.owner.Config;
+
 @Config.Sources({
         "classpath:remote.properties",
 })
 
-public interface browserstackConfig extends Config {
+public interface BrowserstackConfig extends Config {
     @Key("user")
     String getUser();
 
