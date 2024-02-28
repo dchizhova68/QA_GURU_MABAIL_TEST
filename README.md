@@ -1,6 +1,7 @@
 # Проект по автоматизации тестирования мобильного приложения [Wikipedia](https://github.com/wikimedia/apps-android-wikipedia/)
-
+<p align="center">
 <img alt="litres" src="src/media/screenshots/mainPageMobile.JPG">
+</p>
 
 ## :scroll: Содержание:
 * <a href="#tools">Используемый стек</a>
@@ -29,6 +30,9 @@
 <a href="https://www.jenkins.io/"><img width="6%" title="Jenkins" src="src/media/logo/Jenkins.svg"></a>
 <a href="https://web.telegram.org/a/"><img width="6%" title="Telegram" src="src/media/logo/Telegram.svg"></a>
 <a href="https://www.atlassian.com/ru/software/jira/"><img width="5%" title="Jira" src="src/media/logo/Jira.svg"></a>
+<a href="https://appium.io/docs/en/2.4/"><img width="6%" title="Appium" src="src/media/logo/Appium.svg"></a>
+<a href="https://www.browserstack.com/"><img width="6%" title="BrowserStack" src="src/media/logo/Browserstack.svg"></a>
+  
 </p>
 
 
