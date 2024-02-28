@@ -2,6 +2,7 @@
 <p align="center">
 <img alt="litres" src="src/media/screenshots/mainPageMobile.JPG">
 </p>
+
 ## :scroll: Содержание:
 * <a href="#tools">Используемый стек</a>
 * <a href="#cases">Примеры автоматизированных тест-кейсов</a>
